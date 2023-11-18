@@ -55,6 +55,7 @@ export default function Header() {
               <Image
                 width={0}
                 height={0}
+                style={{ width: "auto", height: "auto" }}
                 src="https://flowbite.s3.amazonaws.com/logo.svg"
                 className="mr-3 h-8"
                 alt="FlowBite Logo"
