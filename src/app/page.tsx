@@ -1,4 +1,6 @@
-import { Connect, Connected } from "@/lib/wagmi";
+import { Connect } from "./components/Connect";
+import { Connected } from "./components/Connected";
+
 import { Home } from "./components/Home";
 
 export default function Page() {
