@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
+import Main from "./Main";
 
 export default function DashboardPage() {
   return (
@@ -7,14 +8,8 @@ export default function DashboardPage() {
       <Header />
       <div className="flex">
         <Sidebar />
-        <div className="align-center">div components</div>
+        <Main />
       </div>
-      {/* <Sidebar /> */}
-      {/* <div className="grid grid-rows-2">
-    <div>
-      <div>Dashboard Page Content</div>
-    </div>
-  </div> */}
     </div>
   );
 }
