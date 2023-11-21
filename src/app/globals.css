@@ -25,3 +25,7 @@
     )
     rgb(var(--background-start-rgb));
 } */
+
+.app-container {
+  min-height: 350px;
+}
