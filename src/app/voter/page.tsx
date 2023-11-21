@@ -1,3 +1,7 @@
+"use client";
+
+import CustomInput from "../components/CustomInput";
+
 export default function Voter() {
   const voterList = [
     {
@@ -25,6 +29,46 @@ export default function Voter() {
       voterId: "872",
     },
   ];
+  const formInputs = [
+    {
+      inputType: "text",
+      inputName: "firstName",
+      inputLabel: "First Name",
+    },
+    {
+      inputType: "text",
+      inputName: "lastName",
+      inputLabel: "Last Name",
+    },
+    {
+      inputType: "email",
+      inputName: "email",
+      inputLabel: "Email address",
+    },
+    {
+      inputType: "text",
+      inputName: "description",
+      inputLabel: "Description",
+    },
+  ];
+
+  const handleChange = (event: React.SyntheticEvent) => {
+    console.log("on change handling ==>", event.currentTarget);
+  };
+  const renderInputs = () => {
+    return formInputs.map((val, idx) => (
+      <CustomInput
+        key={idx}
+        type={val.inputType as CustomInputPropType["type"]}
+        name={val.inputName}
+        label={val.inputLabel}
+        onChange={handleChange}
+        placeholder={val.inputLabel}
+        textSize="small"
+        className=""
+      />
+    ));
+  };
   return (
     <div>
       <h2 className="text-2xl font-bold tracking-tight text-gray-900">
@@ -49,6 +93,18 @@ export default function Voter() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="space-y-12">
+          <div className="border-b border-gray-900/10 pb-12">
+            <h2 className="text-base font-semibold leading-7 text-gray-900">
+              Register Voter
+            </h2>
+            <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+              {renderInputs()}
+            </div>
           </div>
         </div>
       </div>

@@ -1,15 +1,6 @@
 import { twMerge } from "tailwind-merge";
 import cx from "classnames";
 
-interface CustomInputPropType {
-  name: string;
-  label: string;
-  type: "text" | "email" | "password";
-  placeholder: string;
-  className: string;
-  onChange: () => void;
-  textSize: "small" | "large";
-}
 export default function CustomInput(props: CustomInputPropType) {
   const {
     name = "",
