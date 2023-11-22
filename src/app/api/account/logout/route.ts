@@ -1,11 +1,11 @@
-import { cookies } from 'next/headers';
+import { cookies } from "next/headers";
 
-import { apiHandler } from '_helpers/server/api';
+import { apiHandler } from "_helpers/server/api";
 
 module.exports = apiHandler({
-    POST: logout
+  POST: logout,
 });
 
 function logout() {
-    cookies().delete('authorization');
+  cookies().delete("authorization");
 }

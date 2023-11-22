@@ -1,10 +1,10 @@
-import { usersRepo } from '_helpers/server';
-import { apiHandler } from '_helpers/server/api';
+import { usersRepo } from "_helpers/server";
+import { apiHandler } from "_helpers/server/api";
 
 module.exports = apiHandler({
-    GET: getCurrent
+  GET: getCurrent,
 });
 
 async function getCurrent() {
-    return await usersRepo.getCurrent();
+  return await usersRepo.getCurrent();
 }
