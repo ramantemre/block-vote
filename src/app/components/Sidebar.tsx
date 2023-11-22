@@ -9,19 +9,19 @@ const Sidebar = () => {
 
     <aside
       id="default-sidebar"
-      className="fixed left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+      className="fixed left-0 z-40 h-screen w-64 -translate-x-full transition-transform sm:translate-x-0"
       aria-label="Sidenav"
     >
-      <div className="overflow-y-auto py-5 px-3 h-full bg-white border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+      <div className="h-full overflow-y-auto border-r border-gray-200 bg-white px-3 py-5 dark:border-gray-700 dark:bg-gray-800">
         <ul className="space-y-2">
           <li>
             <a
               href="#"
-              className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              className="group flex items-center rounded-lg p-2 text-base font-normal text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
             >
               <svg
                 aria-hidden="true"
-                className="w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                className="h-6 w-6 text-gray-400 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -35,13 +35,13 @@ const Sidebar = () => {
           <li>
             <button
               type="button"
-              className="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+              className="group flex w-full items-center rounded-lg p-2 text-base font-normal text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
               aria-controls="dropdown-pages"
               data-collapse-toggle="dropdown-pages"
             >
               <svg
                 aria-hidden="true"
-                className="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                className="h-6 w-6 flex-shrink-0 text-gray-400 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -52,12 +52,12 @@ const Sidebar = () => {
                   clipRule="evenodd"
                 ></path>
               </svg>
-              <span className="flex-1 ml-3 text-left whitespace-nowrap">
+              <span className="ml-3 flex-1 whitespace-nowrap text-left">
                 Pages
               </span>
               <svg
                 aria-hidden="true"
-                className="w-6 h-6"
+                className="h-6 w-6"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -69,11 +69,11 @@ const Sidebar = () => {
                 ></path>
               </svg>
             </button>
-            <ul id="dropdown-pages" className="hidden py-2 space-y-2">
+            <ul id="dropdown-pages" className="hidden space-y-2 py-2">
               <li>
                 <a
                   href="#"
-                  className="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  className="group flex w-full items-center rounded-lg p-2 pl-11 text-base font-normal text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 >
                   Settings
                 </a>
@@ -81,7 +81,7 @@ const Sidebar = () => {
               <li>
                 <a
                   href="#"
-                  className="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  className="group flex w-full items-center rounded-lg p-2 pl-11 text-base font-normal text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 >
                   Kanban
                 </a>
@@ -89,7 +89,7 @@ const Sidebar = () => {
               <li>
                 <a
                   href="#"
-                  className="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  className="group flex w-full items-center rounded-lg p-2 pl-11 text-base font-normal text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 >
                   Calendar
                 </a>
@@ -99,13 +99,13 @@ const Sidebar = () => {
           <li>
             <button
               type="button"
-              className="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+              className="group flex w-full items-center rounded-lg p-2 text-base font-normal text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
               aria-controls="dropdown-sales"
               data-collapse-toggle="dropdown-sales"
             >
               <svg
                 aria-hidden="true"
-                className="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                className="h-6 w-6 flex-shrink-0 text-gray-400 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -116,12 +116,12 @@ const Sidebar = () => {
                   clipRule="evenodd"
                 ></path>
               </svg>
-              <span className="flex-1 ml-3 text-left whitespace-nowrap">
+              <span className="ml-3 flex-1 whitespace-nowrap text-left">
                 Sales
               </span>
               <svg
                 aria-hidden="true"
-                className="w-6 h-6"
+                className="h-6 w-6"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -133,11 +133,11 @@ const Sidebar = () => {
                 ></path>
               </svg>
             </button>
-            <ul id="dropdown-sales" className="hidden py-2 space-y-2">
+            <ul id="dropdown-sales" className="hidden space-y-2 py-2">
               <li>
                 <a
                   href="#"
-                  className="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  className="group flex w-full items-center rounded-lg p-2 pl-11 text-base font-normal text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 >
                   Products
                 </a>
@@ -145,7 +145,7 @@ const Sidebar = () => {
               <li>
                 <a
                   href="#"
-                  className="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  className="group flex w-full items-center rounded-lg p-2 pl-11 text-base font-normal text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 >
                   Billing
                 </a>
@@ -153,7 +153,7 @@ const Sidebar = () => {
               <li>
                 <a
                   href="#"
-                  className="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  className="group flex w-full items-center rounded-lg p-2 pl-11 text-base font-normal text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 >
                   Invoice
                 </a>
@@ -163,11 +163,11 @@ const Sidebar = () => {
           <li>
             <a
               href="#"
-              className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              className="group flex items-center rounded-lg p-2 text-base font-normal text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
             >
               <svg
                 aria-hidden="true"
-                className="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                className="h-6 w-6 flex-shrink-0 text-gray-400 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -175,8 +175,8 @@ const Sidebar = () => {
                 <path d="M8.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l2-2a1 1 0 00-1.414-1.414L11 7.586V3a1 1 0 10-2 0v4.586l-.293-.293z"></path>
                 <path d="M3 5a2 2 0 012-2h1a1 1 0 010 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 110-2h1a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"></path>
               </svg>
-              <span className="flex-1 ml-3 whitespace-nowrap">Messages</span>
-              <span className="inline-flex justify-center items-center w-5 h-5 text-xs font-semibold rounded-full text-primary-800 bg-primary-100 dark:bg-primary-200 dark:text-primary-800">
+              <span className="ml-3 flex-1 whitespace-nowrap">Messages</span>
+              <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-primary-100 text-xs font-semibold text-primary-800 dark:bg-primary-200 dark:text-primary-800">
                 6
               </span>
             </a>
@@ -184,13 +184,13 @@ const Sidebar = () => {
           <li>
             <button
               type="button"
-              className="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+              className="group flex w-full items-center rounded-lg p-2 text-base font-normal text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
               aria-controls="dropdown-authentication"
               data-collapse-toggle="dropdown-authentication"
             >
               <svg
                 aria-hidden="true"
-                className="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                className="h-6 w-6 flex-shrink-0 text-gray-400 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -201,12 +201,12 @@ const Sidebar = () => {
                   clipRule="evenodd"
                 ></path>
               </svg>
-              <span className="flex-1 ml-3 text-left whitespace-nowrap">
+              <span className="ml-3 flex-1 whitespace-nowrap text-left">
                 Authentication
               </span>
               <svg
                 aria-hidden="true"
-                className="w-6 h-6"
+                className="h-6 w-6"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -218,11 +218,11 @@ const Sidebar = () => {
                 ></path>
               </svg>
             </button>
-            <ul id="dropdown-authentication" className="hidden py-2 space-y-2">
+            <ul id="dropdown-authentication" className="hidden space-y-2 py-2">
               <li>
                 <a
                   href="#"
-                  className="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  className="group flex w-full items-center rounded-lg p-2 pl-11 text-base font-normal text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 >
                   Sign In
                 </a>
@@ -230,7 +230,7 @@ const Sidebar = () => {
               <li>
                 <a
                   href="#"
-                  className="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  className="group flex w-full items-center rounded-lg p-2 pl-11 text-base font-normal text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 >
                   Sign Up
                 </a>
@@ -238,7 +238,7 @@ const Sidebar = () => {
               <li>
                 <a
                   href="#"
-                  className="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  className="group flex w-full items-center rounded-lg p-2 pl-11 text-base font-normal text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 >
                   Forgot Password
                 </a>
@@ -246,15 +246,15 @@ const Sidebar = () => {
             </ul>
           </li>
         </ul>
-        <ul className="pt-5 mt-5 space-y-2 border-t border-gray-200 dark:border-gray-700">
+        <ul className="mt-5 space-y-2 border-t border-gray-200 pt-5 dark:border-gray-700">
           <li>
             <a
               href="#"
-              className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+              className="group flex items-center rounded-lg p-2 text-base font-normal text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
             >
               <svg
                 aria-hidden="true"
-                className="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                className="h-6 w-6 flex-shrink-0 text-gray-400 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -272,11 +272,11 @@ const Sidebar = () => {
           <li>
             <a
               href="#"
-              className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+              className="group flex items-center rounded-lg p-2 text-base font-normal text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
             >
               <svg
                 aria-hidden="true"
-                className="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                className="h-6 w-6 flex-shrink-0 text-gray-400 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -289,11 +289,11 @@ const Sidebar = () => {
           <li>
             <a
               href="#"
-              className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+              className="group flex items-center rounded-lg p-2 text-base font-normal text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
             >
               <svg
                 aria-hidden="true"
-                className="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                className="h-6 w-6 flex-shrink-0 text-gray-400 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -309,14 +309,14 @@ const Sidebar = () => {
           </li>
         </ul>
       </div>
-      <div className="hidden absolute bottom-0 left-0 justify-center p-4 space-x-4 w-full lg:flex bg-white dark:bg-gray-800 z-20 border-r border-gray-200 dark:border-gray-700">
+      <div className="absolute bottom-0 left-0 z-20 hidden w-full justify-center space-x-4 border-r border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800 lg:flex">
         <a
           href="#"
-          className="inline-flex justify-center p-2 text-gray-500 rounded cursor-pointer dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-600"
+          className="inline-flex cursor-pointer justify-center rounded p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
         >
           <svg
             aria-hidden="true"
-            className="w-6 h-6"
+            className="h-6 w-6"
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -327,11 +327,11 @@ const Sidebar = () => {
         <a
           href="#"
           data-tooltip-target="tooltip-settings"
-          className="inline-flex justify-center p-2 text-gray-500 rounded cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600"
+          className="inline-flex cursor-pointer justify-center rounded p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
         >
           <svg
             aria-hidden="true"
-            className="w-6 h-6"
+            className="h-6 w-6"
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -346,7 +346,7 @@ const Sidebar = () => {
         <div
           id="tooltip-settings"
           role="tooltip"
-          className="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip"
+          className="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300"
         >
           Settings page
           <div className="tooltip-arrow" data-popper-arrow></div>
@@ -354,11 +354,11 @@ const Sidebar = () => {
         <button
           type="button"
           data-dropdown-toggle="language-dropdown"
-          className="inline-flex justify-center p-2 text-gray-500 rounded cursor-pointer dark:hover:text-white dark:text-gray-400 hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600"
+          className="inline-flex cursor-pointer justify-center rounded p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
         >
           <svg
             aria-hidden="true"
-            className="h-5 w-5 rounded-full mt-0.5"
+            className="mt-0.5 h-5 w-5 rounded-full"
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 3900 3900"
@@ -397,20 +397,20 @@ const Sidebar = () => {
         </button>
         {/* <!-- Dropdown --> */}
         <div
-          className="hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700"
+          className="z-50 my-4 hidden list-none divide-y divide-gray-100 rounded bg-white text-base shadow dark:bg-gray-700"
           id="language-dropdown"
         >
           <ul className="py-1" role="none">
             <li>
               <a
                 href="#"
-                className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:text-white dark:text-gray-300 dark:hover:bg-gray-600"
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
                 role="menuitem"
               >
                 <div className="inline-flex items-center">
                   <svg
                     aria-hidden="true"
-                    className="h-3.5 w-3.5 rounded-full mr-2"
+                    className="mr-2 h-3.5 w-3.5 rounded-full"
                     xmlns="http://www.w3.org/2000/svg"
                     id="flag-icon-css-us"
                     viewBox="0 0 512 512"
@@ -447,13 +447,13 @@ const Sidebar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-600"
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
                 role="menuitem"
               >
                 <div className="inline-flex items-center">
                   <svg
                     aria-hidden="true"
-                    className="h-3.5 w-3.5 rounded-full mr-2"
+                    className="mr-2 h-3.5 w-3.5 rounded-full"
                     xmlns="http://www.w3.org/2000/svg"
                     id="flag-icon-css-de"
                     viewBox="0 0 512 512"
@@ -469,13 +469,13 @@ const Sidebar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-600"
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
                 role="menuitem"
               >
                 <div className="inline-flex items-center">
                   <svg
                     aria-hidden="true"
-                    className="h-3.5 w-3.5 rounded-full mr-2"
+                    className="mr-2 h-3.5 w-3.5 rounded-full"
                     xmlns="http://www.w3.org/2000/svg"
                     id="flag-icon-css-it"
                     viewBox="0 0 512 512"
@@ -493,13 +493,13 @@ const Sidebar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:text-white dark:text-gray-300 dark:hover:bg-gray-600"
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
                 role="menuitem"
               >
                 <div className="inline-flex items-center">
                   <svg
                     aria-hidden="true"
-                    className="h-3.5 w-3.5 rounded-full mr-2"
+                    className="mr-2 h-3.5 w-3.5 rounded-full"
                     xmlns="http://www.w3.org/2000/svg"
                     xmlnsXlink="http://www.w3.org/1999/xlink"
                     id="flag-icon-css-cn"

@@ -22,7 +22,7 @@ function Users() {
       <Link href="/users/add" className="btn btn-sm btn-success mb-2">
         Add User
       </Link>
-      <table className="table table-striped">
+      <table className="table-striped table">
         <thead>
           <tr>
             <th style={{ width: "30%" }}>First Name</th>

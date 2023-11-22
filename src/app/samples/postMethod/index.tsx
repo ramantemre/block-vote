@@ -32,22 +32,22 @@ export default function FormSubmit() {
   };
 
   return (
-    <div className=" flex flex-col justify-center items-center w-full p-8 ">
-      <h1 className=" w-full text-center m-4 font-semibold text-lg ">
+    <div className=" flex w-full flex-col items-center justify-center p-8 ">
+      <h1 className=" m-4 w-full text-center text-lg font-semibold ">
         GET & POST Request in NextJS Stable App Router
       </h1>
       <form
         onSubmit={handleSubmit}
-        className=" flex w-full flex-col justify-center items-center "
+        className=" flex w-full flex-col items-center justify-center "
       >
-        <div className=" flex w-1/2 justify-center items-center gap-4 ">
+        <div className=" flex w-1/2 items-center justify-center gap-4 ">
           <input
             type="text"
             name="name"
             value={name}
             placeholder="Enter the name"
             onChange={(e) => setName(e.target.value)}
-            className=" border p-2 px-4 rounded outline-none "
+            className=" rounded border p-2 px-4 outline-none "
           />
           <input
             type="number"
@@ -55,11 +55,11 @@ export default function FormSubmit() {
             value={age}
             placeholder="Enter the age"
             onChange={(e) => setAge(e.target.value)}
-            className=" border p-2 px-4 rounded outline-none "
+            className=" rounded border p-2 px-4 outline-none "
           />
           <button
             type="submit"
-            className=" border-blue-500 bg-blue-500 text-white p-2 px-4 rounded-md "
+            className=" rounded-md border-blue-500 bg-blue-500 p-2 px-4 text-white "
           >
             Submit
           </button>

@@ -3,17 +3,17 @@ import Image from "next/image";
 export default function Header() {
   return (
     <header className="antialiased">
-      <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
-        <div className="flex flex-wrap justify-between items-center">
-          <div className="flex justify-start items-center">
+      <nav className="border-gray-200 bg-white px-4 py-2.5 dark:bg-gray-800 lg:px-6">
+        <div className="flex flex-wrap items-center justify-between">
+          <div className="flex items-center justify-start">
             <button
               id="toggleSidebar"
               aria-expanded="true"
               aria-controls="sidebar"
-              className="hidden p-2 mr-3 text-gray-600 rounded cursor-pointer lg:inline hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-700"
+              className="mr-3 hidden cursor-pointer rounded p-2 text-gray-600 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:inline"
             >
               <svg
-                className="w-5 h-5"
+                className="h-5 w-5"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -32,10 +32,10 @@ export default function Header() {
             <button
               aria-expanded="true"
               aria-controls="sidebar"
-              className="p-2 mr-2 text-gray-600 rounded-lg cursor-pointer lg:hidden hover:text-gray-900 hover:bg-gray-100 focus:bg-gray-100 dark:focus:bg-gray-700 focus:ring-2 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+              className="mr-2 cursor-pointer rounded-lg p-2 text-gray-600 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:ring-2 focus:ring-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:bg-gray-700 dark:focus:ring-gray-700 lg:hidden"
             >
               <svg
-                className="w-[18px] h-[18px]"
+                className="h-[18px] w-[18px]"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -51,7 +51,7 @@ export default function Header() {
               </svg>
               <span className="sr-only">Toggle sidebar</span>
             </button>
-            <a href="https://flowbite.com" className="flex mr-4">
+            <a href="https://flowbite.com" className="mr-4 flex">
               <Image
                 width={0}
                 height={0}
@@ -60,7 +60,7 @@ export default function Header() {
                 className="mr-3 h-8"
                 alt="FlowBite Logo"
               />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
                 Flowbite
               </span>
             </a>
@@ -69,9 +69,9 @@ export default function Header() {
                 Search
               </label>
               <div className="relative mt-1 lg:w-96">
-                <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
                   <svg
-                    className="w-4 h-4 text-gray-500 dark:text-gray-400"
+                    className="h-4 w-4 text-gray-500 dark:text-gray-400"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -91,7 +91,7 @@ export default function Header() {
                   type="text"
                   name="email"
                   id="topbar-search"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full pl-9 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 pl-9 text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500 sm:text-sm"
                   placeholder="Search"
                 />
               </div>
@@ -100,11 +100,11 @@ export default function Header() {
           <div className="flex items-center lg:order-2">
             <button
               type="button"
-              className="hidden sm:inline-flex items-center justify-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-xs px-3 py-1.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+              className="mr-2 hidden items-center justify-center rounded-lg bg-primary-700 px-3 py-1.5 text-xs font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 sm:inline-flex"
             >
               <svg
                 aria-hidden="true"
-                className="mr-1 -ml-1 w-5 h-5"
+                className="-ml-1 mr-1 h-5 w-5"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -120,12 +120,12 @@ export default function Header() {
             <button
               id="toggleSidebarMobileSearch"
               type="button"
-              className="p-2 text-gray-500 rounded-lg lg:hidden hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+              className="rounded-lg p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:hidden"
             >
               <span className="sr-only">Search</span>
               {/* <!-- Search icon --> */}
               <svg
-                className="w-4 h-4"
+                className="h-4 w-4"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -144,12 +144,12 @@ export default function Header() {
             <button
               type="button"
               data-dropdown-toggle="notification-dropdown"
-              className="p-2 mr-1 text-gray-500 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+              className="mr-1 rounded-lg p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-900 focus:ring-4 focus:ring-gray-300 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-600"
             >
               <span className="sr-only">View notifications</span>
               {/* <!-- Bell icon --> */}
               <svg
-                className="w-5 h-5"
+                className="h-5 w-5"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -160,28 +160,28 @@ export default function Header() {
             </button>
             {/* <!-- Dropdown menu --> */}
             <div
-              className="hidden overflow-hidden z-50 my-4 max-w-sm text-base list-none bg-white rounded divide-y divide-gray-100 shadow-lg dark:divide-gray-600 dark:bg-gray-700"
+              className="z-50 my-4 hidden max-w-sm list-none divide-y divide-gray-100 overflow-hidden rounded bg-white text-base shadow-lg dark:divide-gray-600 dark:bg-gray-700"
               id="notification-dropdown"
             >
-              <div className="block py-2 px-4 text-base font-medium text-center text-gray-700 bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+              <div className="block bg-gray-50 px-4 py-2 text-center text-base font-medium text-gray-700 dark:bg-gray-700 dark:text-gray-400">
                 Notifications
               </div>
               <div>
                 <a
                   href="#"
-                  className="flex py-3 px-4 border-b hover:bg-gray-100 dark:hover:bg-gray-600 dark:border-gray-600"
+                  className="flex border-b px-4 py-3 hover:bg-gray-100 dark:border-gray-600 dark:hover:bg-gray-600"
                 >
                   <div className="flex-shrink-0">
                     <Image
                       width={0}
                       height={0}
-                      className="w-11 h-11 rounded-full"
+                      className="h-11 w-11 rounded-full"
                       src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
                       alt="Bonnie Green avatar"
                     />
-                    <div className="flex absolute justify-center items-center ml-6 -mt-5 w-5 h-5 rounded-full border border-white bg-primary-700 dark:border-gray-700">
+                    <div className="absolute -mt-5 ml-6 flex h-5 w-5 items-center justify-center rounded-full border border-white bg-primary-700 dark:border-gray-700">
                       <svg
-                        className="w-2 h-2 text-white"
+                        className="h-2 w-2 text-white"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
@@ -192,8 +192,8 @@ export default function Header() {
                       </svg>
                     </div>
                   </div>
-                  <div className="pl-3 w-full">
-                    <div className="text-gray-500 font-normal text-sm mb-1.5 dark:text-gray-400">
+                  <div className="w-full pl-3">
+                    <div className="mb-1.5 text-sm font-normal text-gray-500 dark:text-gray-400">
                       New message from{" "}
                       <span className="font-semibold text-gray-900 dark:text-white">
                         Bonnie Green
@@ -207,19 +207,19 @@ export default function Header() {
                 </a>
                 <a
                   href="#"
-                  className="flex py-3 px-4 border-b hover:bg-gray-100 dark:hover:bg-gray-600 dark:border-gray-600"
+                  className="flex border-b px-4 py-3 hover:bg-gray-100 dark:border-gray-600 dark:hover:bg-gray-600"
                 >
                   <div className="flex-shrink-0">
                     <Image
                       width={0}
                       height={0}
-                      className="w-11 h-11 rounded-full"
+                      className="h-11 w-11 rounded-full"
                       src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
                       alt="Jese Leos avatar"
                     />
-                    <div className="flex absolute justify-center items-center ml-6 -mt-5 w-5 h-5 bg-gray-900 rounded-full border border-white dark:border-gray-700">
+                    <div className="absolute -mt-5 ml-6 flex h-5 w-5 items-center justify-center rounded-full border border-white bg-gray-900 dark:border-gray-700">
                       <svg
-                        className="w-2 h-2 text-white"
+                        className="h-2 w-2 text-white"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
@@ -229,8 +229,8 @@ export default function Header() {
                       </svg>
                     </div>
                   </div>
-                  <div className="pl-3 w-full">
-                    <div className="text-gray-500 font-normal text-sm mb-1.5 dark:text-gray-400">
+                  <div className="w-full pl-3">
+                    <div className="mb-1.5 text-sm font-normal text-gray-500 dark:text-gray-400">
                       <span className="font-semibold text-gray-900 dark:text-white">
                         Jese leos
                       </span>{" "}
@@ -247,19 +247,19 @@ export default function Header() {
                 </a>
                 <a
                   href="#"
-                  className="flex py-3 px-4 border-b hover:bg-gray-100 dark:hover:bg-gray-600 dark:border-gray-600"
+                  className="flex border-b px-4 py-3 hover:bg-gray-100 dark:border-gray-600 dark:hover:bg-gray-600"
                 >
                   <div className="flex-shrink-0">
                     <Image
                       width={0}
                       height={0}
-                      className="w-11 h-11 rounded-full"
+                      className="h-11 w-11 rounded-full"
                       src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
                       alt="Joseph McFall avatar"
                     />
-                    <div className="flex absolute justify-center items-center ml-6 -mt-5 w-5 h-5 bg-red-600 rounded-full border border-white dark:border-gray-700">
+                    <div className="absolute -mt-5 ml-6 flex h-5 w-5 items-center justify-center rounded-full border border-white bg-red-600 dark:border-gray-700">
                       <svg
-                        className="w-2 h-2 text-white"
+                        className="h-2 w-2 text-white"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
@@ -270,8 +270,8 @@ export default function Header() {
                       </svg>
                     </div>
                   </div>
-                  <div className="pl-3 w-full">
-                    <div className="text-gray-500 font-normal text-sm mb-1.5 dark:text-gray-400">
+                  <div className="w-full pl-3">
+                    <div className="mb-1.5 text-sm font-normal text-gray-500 dark:text-gray-400">
                       <span className="font-semibold text-gray-900 dark:text-white">
                         Joseph Mcfall
                       </span>{" "}
@@ -288,19 +288,19 @@ export default function Header() {
                 </a>
                 <a
                   href="#"
-                  className="flex py-3 px-4 border-b hover:bg-gray-100 dark:hover:bg-gray-600 dark:border-gray-600"
+                  className="flex border-b px-4 py-3 hover:bg-gray-100 dark:border-gray-600 dark:hover:bg-gray-600"
                 >
                   <div className="flex-shrink-0">
                     <Image
                       width={0}
                       height={0}
-                      className="w-11 h-11 rounded-full"
+                      className="h-11 w-11 rounded-full"
                       src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png"
                       alt="Roberta Casas image"
                     />
-                    <div className="flex absolute justify-center items-center ml-6 -mt-5 w-5 h-5 bg-green-400 rounded-full border border-white dark:border-gray-700">
+                    <div className="absolute -mt-5 ml-6 flex h-5 w-5 items-center justify-center rounded-full border border-white bg-green-400 dark:border-gray-700">
                       <svg
-                        className="w-2 h-2 text-white"
+                        className="h-2 w-2 text-white"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
@@ -310,8 +310,8 @@ export default function Header() {
                       </svg>
                     </div>
                   </div>
-                  <div className="pl-3 w-full">
-                    <div className="text-gray-500 font-normal text-sm mb-1.5 dark:text-gray-400">
+                  <div className="w-full pl-3">
+                    <div className="mb-1.5 text-sm font-normal text-gray-500 dark:text-gray-400">
                       <span className="font-semibold text-gray-900 dark:text-white">
                         Leslie Livingston
                       </span>{" "}
@@ -328,19 +328,19 @@ export default function Header() {
                 </a>
                 <a
                   href="#"
-                  className="flex py-3 px-4 hover:bg-gray-100 dark:hover:bg-gray-600"
+                  className="flex px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-600"
                 >
                   <div className="flex-shrink-0">
                     <Image
                       width={0}
                       height={0}
-                      className="w-11 h-11 rounded-full"
+                      className="h-11 w-11 rounded-full"
                       src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/robert-brown.png"
                       alt="Robert image"
                     />
-                    <div className="flex absolute justify-center items-center ml-6 -mt-5 w-5 h-5 bg-purple-500 rounded-full border border-white dark:border-gray-700">
+                    <div className="absolute -mt-5 ml-6 flex h-5 w-5 items-center justify-center rounded-full border border-white bg-purple-500 dark:border-gray-700">
                       <svg
-                        className="w-2 h-2 text-white"
+                        className="h-2 w-2 text-white"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
@@ -350,8 +350,8 @@ export default function Header() {
                       </svg>
                     </div>
                   </div>
-                  <div className="pl-3 w-full">
-                    <div className="text-gray-500 font-normal text-sm mb-1.5 dark:text-gray-400">
+                  <div className="w-full pl-3">
+                    <div className="mb-1.5 text-sm font-normal text-gray-500 dark:text-gray-400">
                       <span className="font-semibold text-gray-900 dark:text-white">
                         Robert Brown
                       </span>{" "}
@@ -366,12 +366,12 @@ export default function Header() {
               </div>
               <a
                 href="#"
-                className="block py-2 text-base font-medium text-center text-gray-900 bg-gray-50 hover:bg-gray-100 dark:bg-gray-700 dark:text-white dark:hover:underline"
+                className="block bg-gray-50 py-2 text-center text-base font-medium text-gray-900 hover:bg-gray-100 dark:bg-gray-700 dark:text-white dark:hover:underline"
               >
                 <div className="inline-flex items-center ">
                   <svg
                     aria-hidden="true"
-                    className="mr-2 w-5 h-5"
+                    className="mr-2 h-5 w-5"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
@@ -391,12 +391,12 @@ export default function Header() {
             <button
               type="button"
               data-dropdown-toggle="apps-dropdown"
-              className="p-2 text-gray-500 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+              className="rounded-lg p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-900 focus:ring-4 focus:ring-gray-300 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-600"
             >
               <span className="sr-only">View notifications</span>
               {/* <!-- Icon --> */}
               <svg
-                className="w-4 h-4"
+                className="h-4 w-4"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -407,19 +407,19 @@ export default function Header() {
             </button>
             {/* <!-- Dropdown menu --> */}
             <div
-              className="hidden overflow-hidden z-50 my-4 max-w-sm text-base list-none bg-white rounded divide-y divide-gray-100 shadow-lg dark:bg-gray-700 dark:divide-gray-600"
+              className="z-50 my-4 hidden max-w-sm list-none divide-y divide-gray-100 overflow-hidden rounded bg-white text-base shadow-lg dark:divide-gray-600 dark:bg-gray-700"
               id="apps-dropdown"
             >
-              <div className="block py-2 px-4 text-base font-medium text-center text-gray-700 bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+              <div className="block bg-gray-50 px-4 py-2 text-center text-base font-medium text-gray-700 dark:bg-gray-700 dark:text-gray-400">
                 Apps
               </div>
               <div className="grid grid-cols-3 gap-4 p-4">
                 <a
                   href="#"
-                  className="block p-4 text-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 group"
+                  className="group block rounded-lg p-4 text-center hover:bg-gray-100 dark:hover:bg-gray-600"
                 >
                   <svg
-                    className="mx-auto mb-2 w-5 h-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-400 dark:group-hover:text-gray-400"
+                    className="mx-auto mb-2 h-5 w-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-400 dark:group-hover:text-gray-400"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -433,10 +433,10 @@ export default function Header() {
                 </a>
                 <a
                   href="#"
-                  className="block p-4 text-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 group"
+                  className="group block rounded-lg p-4 text-center hover:bg-gray-100 dark:hover:bg-gray-600"
                 >
                   <svg
-                    className="mx-auto mb-2 w-5 h-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-400 dark:group-hover:text-gray-400"
+                    className="mx-auto mb-2 h-5 w-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-400 dark:group-hover:text-gray-400"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -451,10 +451,10 @@ export default function Header() {
                 </a>
                 <a
                   href="#"
-                  className="block p-4 text-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 group"
+                  className="group block rounded-lg p-4 text-center hover:bg-gray-100 dark:hover:bg-gray-600"
                 >
                   <svg
-                    className="mx-auto mb-2 w-5 h-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-400 dark:group-hover:text-gray-400"
+                    className="mx-auto mb-2 h-5 w-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-400 dark:group-hover:text-gray-400"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -470,10 +470,10 @@ export default function Header() {
                 </a>
                 <a
                   href="#"
-                  className="block p-4 text-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 group"
+                  className="group block rounded-lg p-4 text-center hover:bg-gray-100 dark:hover:bg-gray-600"
                 >
                   <svg
-                    className="mx-auto mb-2 w-5 h-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-400 dark:group-hover:text-gray-400"
+                    className="mx-auto mb-2 h-5 w-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-400 dark:group-hover:text-gray-400"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -487,10 +487,10 @@ export default function Header() {
                 </a>
                 <a
                   href="#"
-                  className="block p-4 text-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 group"
+                  className="group block rounded-lg p-4 text-center hover:bg-gray-100 dark:hover:bg-gray-600"
                 >
                   <svg
-                    className="mx-auto mb-2 w-5 h-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-400 dark:group-hover:text-gray-400"
+                    className="mx-auto mb-2 h-5 w-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-400 dark:group-hover:text-gray-400"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -504,10 +504,10 @@ export default function Header() {
                 </a>
                 <a
                   href="#"
-                  className="block p-4 text-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 group"
+                  className="group block rounded-lg p-4 text-center hover:bg-gray-100 dark:hover:bg-gray-600"
                 >
                   <svg
-                    className="mx-auto mb-2 w-5 h-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-400 dark:group-hover:text-gray-400"
+                    className="mx-auto mb-2 h-5 w-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-400 dark:group-hover:text-gray-400"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -521,10 +521,10 @@ export default function Header() {
                 </a>
                 <a
                   href="#"
-                  className="block p-4 text-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 group"
+                  className="group block rounded-lg p-4 text-center hover:bg-gray-100 dark:hover:bg-gray-600"
                 >
                   <svg
-                    className="mx-auto mb-2 w-5 h-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-400 dark:group-hover:text-gray-400"
+                    className="mx-auto mb-2 h-5 w-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-400 dark:group-hover:text-gray-400"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -544,10 +544,10 @@ export default function Header() {
                 </a>
                 <a
                   href="#"
-                  className="block p-4 text-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 group"
+                  className="group block rounded-lg p-4 text-center hover:bg-gray-100 dark:hover:bg-gray-600"
                 >
                   <svg
-                    className="mx-auto mb-2 w-5 h-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-400 dark:group-hover:text-gray-400"
+                    className="mx-auto mb-2 h-5 w-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-400 dark:group-hover:text-gray-400"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -563,10 +563,10 @@ export default function Header() {
                 </a>
                 <a
                   href="#"
-                  className="block p-4 text-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 group"
+                  className="group block rounded-lg p-4 text-center hover:bg-gray-100 dark:hover:bg-gray-600"
                 >
                   <svg
-                    className="mx-auto mb-2 w-5 h-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-400 dark:group-hover:text-gray-400"
+                    className="mx-auto mb-2 h-5 w-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-400 dark:group-hover:text-gray-400"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -588,7 +588,7 @@ export default function Header() {
             </div>
             <button
               type="button"
-              className="flex mx-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+              className="mx-3 flex rounded-full bg-gray-800 text-sm focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600 md:mr-0"
               id="user-menu-button"
               aria-expanded="false"
               data-dropdown-toggle="dropdown"
@@ -597,21 +597,21 @@ export default function Header() {
               <Image
                 width={0}
                 height={0}
-                className="w-8 h-8 rounded-full"
+                className="h-8 w-8 rounded-full"
                 src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/robert-brown.png"
                 alt="user photo"
               />
             </button>
             {/* <!-- Dropdown menu --> */}
             <div
-              className="hidden z-50 my-4 w-56 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"
+              className="z-50 my-4 hidden w-56 list-none divide-y divide-gray-100 rounded bg-white text-base shadow dark:divide-gray-600 dark:bg-gray-700"
               id="dropdown"
             >
-              <div className="py-3 px-4">
+              <div className="px-4 py-3">
                 <span className="block text-sm font-semibold text-gray-900 dark:text-white">
                   Neil sims
                 </span>
-                <span className="block text-sm text-gray-500 truncate dark:text-gray-400">
+                <span className="block truncate text-sm text-gray-500 dark:text-gray-400">
                   name@flowbite.com
                 </span>
               </div>
@@ -622,7 +622,7 @@ export default function Header() {
                 <li>
                   <a
                     href="#"
-                    className="block py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
+                    className="block px-4 py-2 text-sm hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
                   >
                     My profile
                   </a>
@@ -630,7 +630,7 @@ export default function Header() {
                 <li>
                   <a
                     href="#"
-                    className="block py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
+                    className="block px-4 py-2 text-sm hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
                   >
                     Account settings
                   </a>
@@ -643,10 +643,10 @@ export default function Header() {
                 <li>
                   <a
                     href="#"
-                    className="flex items-center py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    className="flex items-center px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                   >
                     <svg
-                      className="mr-2 w-4 h-4 text-gray-400"
+                      className="mr-2 h-4 w-4 text-gray-400"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor"
@@ -660,10 +660,10 @@ export default function Header() {
                 <li>
                   <a
                     href="#"
-                    className="flex items-center py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    className="flex items-center px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                   >
                     <svg
-                      className="mr-2 w-4 h-4 text-gray-400"
+                      className="mr-2 h-4 w-4 text-gray-400"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor"
@@ -680,11 +680,11 @@ export default function Header() {
                 <li>
                   <a
                     href="#"
-                    className="flex justify-between items-center py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    className="flex items-center justify-between px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                   >
                     <span className="flex items-center">
                       <svg
-                        className="mr-2 w-4 h-4 text-primary-600 dark:text-primary-500"
+                        className="mr-2 h-4 w-4 text-primary-600 dark:text-primary-500"
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="currentColor"
@@ -695,7 +695,7 @@ export default function Header() {
                       Pro version
                     </span>
                     <svg
-                      className="w-2.5 h-2.5 text-gray-400"
+                      className="h-2.5 w-2.5 text-gray-400"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -719,7 +719,7 @@ export default function Header() {
                 <li>
                   <a
                     href="#"
-                    className="block py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    className="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                   >
                     Sign out
                   </a>

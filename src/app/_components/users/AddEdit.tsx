@@ -59,7 +59,7 @@ function AddEdit({ title, user }: { title: string; user?: any }) {
     <form onSubmit={handleSubmit(onSubmit)}>
       <h1>{title}</h1>
       <div className="row">
-        <div className="mb-3 col">
+        <div className="col mb-3">
           <label className="form-label">First Name</label>
           <input
             {...fields.firstName}
@@ -70,7 +70,7 @@ function AddEdit({ title, user }: { title: string; user?: any }) {
             {errors.firstName?.message?.toString()}
           </div>
         </div>
-        <div className="mb-3 col">
+        <div className="col mb-3">
           <label className="form-label">Last Name</label>
           <input
             {...fields.lastName}
@@ -83,7 +83,7 @@ function AddEdit({ title, user }: { title: string; user?: any }) {
         </div>
       </div>
       <div className="row">
-        <div className="mb-3 col">
+        <div className="col mb-3">
           <label className="form-label">Username</label>
           <input
             {...fields.username}
@@ -94,7 +94,7 @@ function AddEdit({ title, user }: { title: string; user?: any }) {
             {errors.username?.message?.toString()}
           </div>
         </div>
-        <div className="mb-3 col">
+        <div className="col mb-3">
           <label className="form-label">
             Password
             {user && (
