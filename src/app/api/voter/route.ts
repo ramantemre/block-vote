@@ -1,5 +1,5 @@
 // import { }from '@/models/voter'
-import clientPromise from "../../../../lib/mongodb";
+import clientPromise from "@/lib/mongodb";
 import { NextApiRequest, NextApiResponse } from "next";
 
 import VoterModel from "@/models/voter";
