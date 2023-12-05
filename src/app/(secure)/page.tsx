@@ -24,6 +24,9 @@ function Home() {
         <p>
           <Link href="/users">Manage Users</Link>
         </p>
+        <p>
+          <Link href="/candidates">Manage Candidates</Link>
+        </p>
       </>
     );
   } else {

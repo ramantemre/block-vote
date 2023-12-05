@@ -25,6 +25,9 @@ function Nav() {
         <NavLink href="/users" className="nav-item nav-link">
           Users
         </NavLink>
+        <NavLink href="/candidates" className="nav-item nav-link">
+          Candidates
+        </NavLink>
         <button
           onClick={logout}
           className="btn btn-link nav-item nav-link"
